@@ -69,12 +69,10 @@ const styles = StyleSheet.create({
   },
   content: {
     flex: 1, // a flex of 1 in react native lets a component stretch to limit of the space
-    backgroundColor: 'pink',
     padding: 40,
   },
   list: {
     flex: 1,
     marginTop: 20,
-    backgroundColor: 'yellow',
   },
 });
