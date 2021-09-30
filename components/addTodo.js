@@ -8,10 +8,6 @@ export default function AddTodo({ submitHandler }) {
     setText(val);
   };
 
-  useEffect(() => {
-    console.log(text);
-  }, [text]);
-
   return (
     <View>
       <TextInput

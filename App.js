@@ -1,6 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import React, { useState } from 'react';
-import { StyleSheet, Text, View, FlatList } from 'react-native';
+import { StyleSheet, Text, Alert, View, FlatList } from 'react-native';
 import AddTodo from './components/addTodo';
 import Header from './components/header';
 import TodoItem from './components/todoItem';
@@ -24,8 +24,8 @@ export default function App() {
         return [{ text, key: Math.random().toString() }, ...prevTodos];
       });
     } else {
-      Alert.alert('OOPS', 'Todo must be over 3 characters long', [
-        { text: 'Understood', onPress: () => console.log('alert closed') },
+      Alert.alert('Oops!', 'Todo must be over 3 characters long', [
+        { text: 'わかりました', onPress: () => console.log('alert closed') },
       ]);
     }
   };
